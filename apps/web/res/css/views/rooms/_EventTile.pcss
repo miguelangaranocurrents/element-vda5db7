@@ -296,6 +296,10 @@ $left-gutter: 64px;
 }
 
 .mx_EventTile_body {
+    /* Also makes the body shrinkable inside the flex wrapper used for annotations like (edited),
+       so wide code blocks scroll instead of stretching the surrounding text out of view. */
+    overflow-y: hidden;
+
     pre {
         border: 1px solid transparent;
 
